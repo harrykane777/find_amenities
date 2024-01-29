@@ -6,8 +6,7 @@ import Form from 'react-bootstrap/Form';
 const AppNavbar = () => {
     return (
         <Navbar className="p-2" style={{ backgroundColor: "#6f42c1" }}>
-            <Navbar.Brand className="fs-3" style={{ color: "white" }}>Car Park Finder</Navbar.Brand>
-            <Navbar.Toggle />
+            <Navbar.Brand className="fs-3" style={{ color: "white" }} href="/">Car Park Finder</Navbar.Brand>
             <Navbar.Collapse className="justify-content-center">
                 <Nav>
                     <Nav.Item>
