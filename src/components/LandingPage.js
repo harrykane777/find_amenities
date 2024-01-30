@@ -1,6 +1,5 @@
 import React from 'react';
 import AppNavbar from './AppNavbar';
-import AvailableSpaces from './AvailableSpaces';
 import MainBoard from './MainBoard';
 
 const LandingPage = () => {
@@ -8,8 +7,6 @@ const LandingPage = () => {
     <div>
       <AppNavbar />
       <MainBoard />
-      <AvailableSpaces />
-      Landing Page
     </div>
   );
 }
