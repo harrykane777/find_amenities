@@ -5,20 +5,18 @@ import AvailableSpaces from "./AvailableSpaces";
 
 const MainBoard = () => {
     return (  
-        <Container 
+        <div
           className="d-flex align-items-center justify-content-center"
           style={{ 
             backgroundColor: '#CBC3E3', 
-            height: '70vh', // Adjust the height as needed
-            width: '70vw', // Adjust the width as needed
-            borderRadius: '20px 0 0 20px', // Optional: Add border-radius for rounded corners
+            borderRadius: '20px', // Optional: Add border-radius for rounded corners
             boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)', // Optional: Add a box shadow
-            marginTop: '4.5vh',
-            marginRight: '0px'
+            width: '100%',
+            marginLeft: '8%',
           }} 
         > 
             <AvailableSpaces></AvailableSpaces>
-        </Container> 
+        </div> 
       ); 
 }
 
