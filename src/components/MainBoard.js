@@ -11,12 +11,10 @@ const MainBoard = () => {
       className="d-flex flex-column align-items-start justify-content-start"
       style={{ 
         backgroundColor: '#CBC3E3', 
-        height: '70vh',
-        width: '70vw',
-        borderRadius: '20px 0 0 20px',
-        boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
-        marginTop: '4.5vh',
-        marginRight: '0px'
+        borderRadius: '20px', // Optional: Add border-radius for rounded corners
+        boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)', // Optional: Add a box shadow
+        width: '100%',
+        marginLeft: '8%',
       }} 
     > 
       {/* First Row */}
@@ -26,6 +24,7 @@ const MainBoard = () => {
           borderRadius: '20px', // Top-left and bottom-left corners are rounded
           marginLeft: '0.39vh',
           backgroundColor: '#CBC3E3',
+          marginTop: "4.38vh"
         }
         }>
         <Col
