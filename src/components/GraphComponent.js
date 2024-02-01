@@ -1,7 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.css'; 
 import Container from "react-bootstrap/Container"
-import { Bar } from 'react-chartjs-2';
 
 const GraphComponent = () => {
     return (
