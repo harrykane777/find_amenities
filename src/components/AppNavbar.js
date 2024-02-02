@@ -4,6 +4,14 @@ import Nav from 'react-bootstrap/Nav';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
+const loginButtonStyle = {
+    border: "none", 
+    color: "white", 
+    justifyContent: "center", 
+    backgroundColor: "#FFD43B",
+    boxShadow: "0 0 10px 3px #9C89B8",
+}
+
 const AppNavbar = () => {
     return (
         <Navbar className="p-2" style={{ backgroundColor: "#6f42c1" }}>
@@ -19,8 +27,8 @@ const AppNavbar = () => {
                         </Form>
                     </Nav.Item>
                     <Nav.Item>
-                        <Button href="/login" className="fs-5 fw-bold mx-2" variant="warning" style={{ color: "white", justifyContent: "center" }}>Login</Button>
-                        <Button href="/register" className="fs-5 fw-bold mx-2" variant="warning" style={{ color: "white", justifyContent: "center" }}>Register</Button>
+                        <Button href="/login" className="fs-5 fw-bold mx-2" style={loginButtonStyle}>Login</Button>
+                        <Button href="/register" className="fs-5 fw-bold mx-2" style={loginButtonStyle}>Register</Button>
                     </Nav.Item>
                 </Nav>
             </Navbar.Collapse>
