@@ -1,11 +1,11 @@
 import React from 'react';
 import AppNavbar from './AppNavbar';
-import MainBoard from './MainBoard';
 import Bookmarks from './Bookmarks';
+import CarParkList from './CarParkList';
 
 const LandingPage = () => {
   return (
-    <div style={{ height: "100vh" }}>
+    <div style={{ height: "100vh", backgroundColor: "#F4F2F7", color: "#4C1E6E" }}>
       <AppNavbar />
       <div 
         style={{
@@ -16,7 +16,8 @@ const LandingPage = () => {
         }}
       >
         <Bookmarks />
-        <MainBoard />
+        {/* <MainBoard /> */}
+        <CarParkList />
       </div>
     </div>
   );
