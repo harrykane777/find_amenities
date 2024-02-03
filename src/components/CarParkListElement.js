@@ -1,5 +1,6 @@
 import React from 'react';
-import { Row, Button } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
+import './Button.css';
 
 const CarParkListElement = () => {
     return (
@@ -17,12 +18,12 @@ const CarParkListElement = () => {
             <div style={{ fontSize: "2em", padding: "0" }}>
                 List Element
             </div>
-            <Button 
-                style={{ width: "5%", backgroundColor: "#4C1E6E", borderColor: "#CBC3E3" }}
+            <button className="btn2-grad"
+                style={{ width: "5%" }}
                 href="/viewCarPark"
             >
                 View
-            </Button>
+            </button>
         </Row>
     );
 }
