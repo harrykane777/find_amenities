@@ -19,7 +19,7 @@ const CarParkListElement = () => {
                 List Element
             </div>
             <button className="btn2-grad"
-                style={{ width: "5%" }}
+                style={{ width: "13%" }}
                 href="/viewCarPark"
             >
                 View
