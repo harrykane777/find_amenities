@@ -2,15 +2,8 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-
-const loginButtonStyle = {
-    border: "none", 
-    color: "white", 
-    justifyContent: "center", 
-    backgroundColor: "#FFD43B",
-    boxShadow: "0 0 10px 3px #9C89B8",
-}
+// import Button from 'react-bootstrap/Button';
+import './Button.css';
 
 const AppNavbar = () => {
     return (
@@ -26,9 +19,9 @@ const AppNavbar = () => {
                             <Form.Control placeholder="Search" />
                         </Form>
                     </Nav.Item>
-                    <Nav.Item>
-                        <Button href="/login" className="fs-5 fw-bold mx-2" style={loginButtonStyle}>Login</Button>
-                        <Button href="/register" className="fs-5 fw-bold mx-2" style={loginButtonStyle}>Register</Button>
+                    <Nav.Item style={{ display: "flex" }}>
+                        <button href="/login" className="btn1-grad mx-2">Login</button>
+                        <button href="/register" className="btn1-grad mx-2">Register</button>
                     </Nav.Item>
                 </Nav>
             </Navbar.Collapse>

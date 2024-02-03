@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/viewCarPark" element={<ViewCarParkPage />} />
+        <Route path="/viewCarPark/:id" element={<ViewCarParkPage />} />
       </Routes>
     </BrowserRouter>
   );
