@@ -1,9 +1,18 @@
 import React from 'react';
-import AppNavbar from './AppNavbar';
-import Bookmarks from './Bookmarks';
-import CarParkList from './CarParkList';
+import AppNavbar from '../components/AppNavbar';
+import Bookmarks from '../components/Bookmarks';
+import CarParkList from '../components/CarParkList';
+import { useState, useEffect } from "react";
 
 const LandingPage = () => {
+  const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    fetch("http://localhost:8000/message")
+      .then((res) => res.json())
+      .then((data) => setMessage(data.message));
+  }, []);
+
   return (
     <div style={{ height: "100vh", backgroundColor: "#F4F2F7", color: "#4C1E6E" }}>
       <AppNavbar />
@@ -18,6 +27,8 @@ const LandingPage = () => {
         <Bookmarks />
         {/* <MainBoard /> */}
         <CarParkList />
+        <h1>{message}</h1>
+
       </div>
     </div>
   );

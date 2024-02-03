@@ -1,7 +1,7 @@
 import React from 'react';
-import Bookmarks from './Bookmarks';
-import MainBoard from './MainBoard';
-import AppNavbar from './AppNavbar';
+import Bookmarks from '../components/Bookmarks';
+import MainBoard from '../components/MainBoard';
+import AppNavbar from '../components/AppNavbar';
 
 const ViewCarParkPage = () => {
     return (
