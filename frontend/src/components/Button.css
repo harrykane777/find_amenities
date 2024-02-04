@@ -17,6 +17,7 @@
     background-position: right center; /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
+    box-shadow: 0 0 15px #FF0000;
 }
 
          
@@ -39,5 +40,6 @@
     background-position: right center; /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
+    box-shadow: 0 0 15px #FFD43B;
 }
  
