@@ -12,10 +12,6 @@ const CarParkList = () => {
         });
     }, []);
 
-    useEffect(() => {
-        console.log('carParks:', carParks);
-    }, [carParks]);
-
     return (
         <div 
             className="d-flex flex-column"
@@ -33,7 +29,7 @@ const CarParkList = () => {
             <ul>
                 { carParks 
                     ? Object.keys(carParks).map(key => (
-                        <CarParkListElement id={key} carPark={carParks[key]} />
+                        <CarParkListElement key={key} id={key} carPark={carParks[key]} />
                     ))
                     : (
                         <li>Loading</li>

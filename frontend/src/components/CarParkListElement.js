@@ -21,7 +21,7 @@ const CarParkListElement = ({ id, carPark }) => {
                 {carPark}
             </div>
             <button className="btn2-grad" style={{ width: "13%" }} onClick={() => navigate(`/viewCarPark/${id}`)}>
-                View {id}
+                View
             </button>
         </Row>
     );

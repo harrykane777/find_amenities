@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Form from 'react-bootstrap/Form';
-// import Button from 'react-bootstrap/Button';
 import './Button.css';
 
 const AppNavbar = () => {
@@ -12,7 +11,7 @@ const AppNavbar = () => {
             <Navbar.Collapse className="justify-content-center" style={{ margin: "0 2% 0 9%" }}>
                 <Nav className="flex-grow-1 justify-content-end">
                     <Nav.Item className="align-self-center">
-                        <Nav.Link href="/browse" className="fs-5" style={{ color: "white" }}>Browse</Nav.Link>
+                        <Nav.Link href="/" className="fs-5" style={{ color: "white" }}>Browse</Nav.Link>
                     </Nav.Item>
                     <Nav.Item className="flex-grow-1 align-self-center mx-5">
                         <Form>
