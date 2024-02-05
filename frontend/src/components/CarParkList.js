@@ -8,9 +8,13 @@ const CarParkList = () => {
         fetch("http://localhost:8000/getCarParks")
         .then(res => res.json())
         .then(data => {
+            // console.log(data);
             setCarParks(data);
         });
     }, []);
+
+    Object.filter = (obj, predicate) => 
+        Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
 
     return (
         <div 
@@ -28,7 +32,7 @@ const CarParkList = () => {
             <h1>Car Parks</h1>
             <ul>
                 { carParks 
-                    ? Object.keys(carParks).map(key => (
+                    ? Object.keys(Object.filter(carParks, carPark => !carPark.includes("(historical only)"))).map(key => (
                         <CarParkListElement key={key} id={key} carPark={carParks[key]} />
                     ))
                     : (

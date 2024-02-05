@@ -50,15 +50,15 @@ const jsonData = {
   "490": "Brookvale Car Park"
 };
 
-// for (const key in jsonData) {
-//   axios.get(liveUrl + key, { headers })
-//   .then(response => {
-//     console.log(response.data);
-//   })
-//   .catch(error => {
-//     console.error('Error:', error.message);
-//   });
-// }
+for (const key in jsonData) {
+  axios.get(liveUrl + key, { headers })
+  .then(response => {
+    console.log(key, response.data);
+  })
+  .catch(error => {
+    console.error('Error:', error.message);
+  });
+}
 
 // axios.get('https://api.transport.nsw.gov.au/v1/carpark', { headers })
 // .then(response => console.log(response.data))
