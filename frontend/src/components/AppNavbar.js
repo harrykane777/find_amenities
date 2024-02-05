@@ -7,7 +7,7 @@ import './Button.css';
 const AppNavbar = () => {
     return (
         <Navbar className="p-2" style={{ backgroundColor: "#6f42c1" }}>
-            <Navbar.Brand className="fs-3" style={{ color: "white", marginLeft: "4.5%" }} href="/">Car Park Finder</Navbar.Brand>
+            <Navbar.Brand className="fs-3" style={{ color: "white", marginLeft: "4.5%" }} href="/">Car Parks NSW</Navbar.Brand>
             <Navbar.Collapse className="justify-content-center" style={{ margin: "0 2% 0 9%" }}>
                 <Nav className="flex-grow-1 justify-content-end">
                     <Nav.Item className="align-self-center">
