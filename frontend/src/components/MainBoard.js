@@ -34,7 +34,7 @@ const MainBoard = () => {
     >
       <h1>{carParkData ? carParkData['facility_name'] : 'Loading...'}</h1>
       <div className="w-100" style={{ minHeight: '30%', display: 'flex', margin: '1% 0', justifyContent: 'space-between' }}>
-          <AvailableSpaces />
+          <AvailableSpaces data={carParkData} />
           <AddressBox />
       </div>
 
