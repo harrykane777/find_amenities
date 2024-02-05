@@ -1,23 +1,18 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.css'; 
-import Container from "react-bootstrap/Container"
+import 'bootstrap/dist/css/bootstrap.css';
 
 const GraphComponent = () => {
     return (
-      <Container
+      <div
         className="d-flex align-items-center justify-content-center"
         style={{ 
           backgroundColor: 'white', 
-          height: '38vh', // Adjust the height as needed
-          width: '59vw', // Adjust the width as needed
-          borderRadius: '20px 20px 20px 20px', // Optional: Add border-radius for rounded corners
+          height: '38vh',
+          borderRadius: '20px',
           boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
-          marginTop: '1.4vh',
-          // marginBottom: '2vh'
-
         }} 
       >
-      </Container>
+      </div>
     );
 }
 
